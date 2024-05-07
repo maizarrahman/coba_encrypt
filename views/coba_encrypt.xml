@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+	  <record id="coba_encrypt_tree" model="ir.ui.view">
+		<field name="name">coba.encrypt.tree</field>
+		<field name="model">coba.encrypt</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name"/>
+				<field name="kata_sandi"/>
+				<field name="angka_sandi"/>
+			</tree>
+		</field>
+	  </record>
+
+	  <record id="coba_encrypt_form" model="ir.ui.view">
+		<field name="name">coba.encrypt.form</field>
+		<field name="model">coba.encrypt</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+						<field name="name"/>
+						<field name="kata_sandi"/>
+						<field name="angka_sandi"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	  </record>
+
+    <record model="ir.actions.act_window" id="coba_encrypt_action">
+      <field name="name">Coba Encrypt</field>
+      <field name="res_model">coba.encrypt</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Coba Encrypt" id="coba_encrypt_top_menu" 
+              sequence="95"/>
+
+    <menuitem name="Coba Encrypt" id="coba_encrypt_root_menu" 
+              parent="coba_encrypt_top_menu" sequence="55"/>
+
+    <menuitem name="Coba Encrypt" id="coba_encrypt_menu" 
+              parent="coba_encrypt_root_menu"
+              action="coba_encrypt_action" sequence="10"/>
+
+  </data>
+</odoo>
