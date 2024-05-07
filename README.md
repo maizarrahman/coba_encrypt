@@ -1,7 +1,7 @@
 # Mencoba addons field_encryption
 
 ## Instalasi
-1. Unduh addon field_encryption di :target: https://github.com/ShahAlamSumon/field_encryption
+1. Unduh addon field_encryption di https://github.com/ShahAlamSumon/field_encryption
 
 2. Install pustaka cryptography
 
