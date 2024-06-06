@@ -13,8 +13,8 @@
     2. Jalankan: ```python3```
     3. Copy paste 2 baris di bawah ini lalu tekan Enter.
 
-        ```from cryptography.fernet import Fernet
-        Fernet.generate_key().decode()```
+            from cryptography.fernet import Fernet
+            Fernet.generate_key().decode()
 
 5. Tambahkan encryption_key dan server_wide_module di file konfigurasi Odoo.
 
