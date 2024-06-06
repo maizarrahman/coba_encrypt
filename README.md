@@ -9,9 +9,9 @@
 
 3. Install addon field_encryption.
 4. Buat encryption_key dengan cara sbb.
-    a. Buka terminal command line
-    b. Jalankan: ```python3```
-    c. Copy paste 2 baris di bawah ini lalu tekan Enter.
+    - Buka terminal command line
+    - Jalankan: ```python3```
+    - Copy paste 2 baris di bawah ini lalu tekan Enter.
 
             from cryptography.fernet import Fernet
             Fernet.generate_key().decode()
